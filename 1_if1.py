@@ -35,9 +35,5 @@ print(check_age(user_age))
 
 
 
-
-
-
-
 if __name__ == "__main__":
     main()
