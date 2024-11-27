@@ -43,7 +43,7 @@ def main():
         for item in all_products:
             total_sum += total_sales(item['items_sold'])
         return total_sum
-    def total_sales_avg (all_products):
+    def total_sales_avg (all_products): #Функция считает средние продажи по базе
         total_sum = 0
         total_items = 0
         for item in all_products:
@@ -61,13 +61,11 @@ def main():
         print(f"Суммарное количество продаж для {product}: {total}")
 
 
-
-
     #Cреднее количество продаж для каждого продукта
     for item in sales_data_base:
         product = item['product']
-        sales = item['items_sold']  # Список продаж
-        avg = round(sales_avg(sales), 2)  # Вызов функции для подсчёта среднего
+        sales = item['items_sold']
+        avg = round(sales_avg(sales), 2)
         print(f"Среднее количество продаж для {product}: {avg}")
 
     #Cуммарное количество продаж всех товаров
